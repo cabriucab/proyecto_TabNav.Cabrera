@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, ImageBackground, Image, Animated } from 'react-native'
 import React from 'react' 
 import { useEffect, useState } from 'react'
+import MainNavigator from '../navigators/MainNavigator'
 
 
 const image = require('../../assets/imagenFondo.png')
@@ -21,7 +22,8 @@ const [fadeIn, setFadeIn] = useState(new Animated.Value(0))
         }).start()
 
         setTimeout(() => {
-            navigation.navigate('Login')
+          
+         
         }, 8000)
     });
 

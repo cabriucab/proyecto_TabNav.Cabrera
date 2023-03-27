@@ -2,6 +2,10 @@ import { Button, StyleSheet, View, FlatList } from 'react-native'
 import React from 'react'
 import { CATEGORIANEGOCIO } from '../data/categoriaNegocio'
 import GridItems from '../components/GridItem'
+import Login from '../screens/Login'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+
+const Stack = createNativeStackNavigator();
 
 
 
@@ -18,6 +22,10 @@ const CategoriesScreen = ({ navigation }) => {
     const renderGridItem = ({ item }) => <GridItems item={item} onSelect={onSelectGridItem} />
 
     return (
+
+
+
+
         <View style={styles.screen}>
 
             <View>
